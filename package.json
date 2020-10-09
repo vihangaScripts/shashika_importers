@@ -1,0 +1,25 @@
+{
+  "name": "01",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "css-loader": "^4.2.1",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.2.0",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "flash": "^1.1.0",
+    "http": "0.0.1-security",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "style-loader": "^1.2.1"
+  }
+}

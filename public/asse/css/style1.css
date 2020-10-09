@@ -1,0 +1,424 @@
+/******************************************************************
+  Template Name: Ashion
+  Description: Ashion ecommerce template
+  Author: Colorib
+  Author URI: https://colorlib.com/
+  Version: 1.0
+  Created: Colorib
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Template default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Categories Section
+5.  Product Section
+6.  Banner Section
+7.  Countdown Section
+8.  Instagram
+9.  Contact
+10.  Footer Style
+-------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+
+/* Template default CSS
+/*----------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+p {
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	color: #666666;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+}
+
+
+/*---------------------
+  Banner
+-----------------------*/
+
+
+
+/*---------------------
+  Discount
+-----------------------*/
+
+.discount__pic img {
+	min-width: 100%;
+	height: 100%;
+}
+
+.discount__text {
+	background: #f4f4f4;
+	height: 390px;
+	padding: 75px 90px 50px;
+	text-align: center;
+}
+
+.discount__text a {
+	font-size: 14px;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	padding: 0 0 3px;
+	display: inline-block;
+}
+
+.discount__text a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+}
+
+.discount__text__title {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 60px;
+}
+
+.discount__text__title:after {
+	position: absolute;
+	left: 50%;
+	top: -38px;
+	height: 183px;
+	width: 183px;
+	background: #ffffff;
+	content: "";
+	border-radius: 50%;
+	z-index: -1;
+	margin-left: -91.5px;
+}
+
+.discount__text__title span {
+	font-size: 12px;
+	color: #111111;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.discount__text__title h2 {
+	font-size: 60px;
+	color: #ca1515;
+	font-family: "Cookie", cursive;
+	line-height: 46px;
+	margin-bottom: 10px;
+}
+
+.discount__text__title h5 {
+	color: #ca1515;
+	font-weight: 700;
+}
+
+.discount__text__title h5 span {
+	font-size: 14px;
+	color: #111111;
+	margin-right: 4px;
+}
+
+.discount__countdown {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.countdown__item {
+	margin-bottom: 15px;
+	float: left;
+	width: 25%;
+}
+
+.countdown__item:last-child {
+	margin-right: 0;
+}
+
+.countdown__item span {
+	font-size: 30px;
+	font-weight: 600;
+	color: #111111;
+	display: inline-block;
+}
+
+.countdown__item p {
+	color: #111111;
+	margin-bottom: 0;
+	display: inline-block;
+	font-weight: 500;
+}
+
+/*---------------------
+  Services
+-----------------------*/
+
+.services {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.services__item {
+	padding-left: 65px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.services__item i {
+	font-size: 36px;
+	color: #ca1515;
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+
+.services__item h6 {
+	color: #111111;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.services__item p {
+	margin-bottom: 0;
+}
+
+/*---------------------
+  Instagram
+-----------------------*/
+
+.instagram__item {
+	height: 320px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+
+.instagram__item:hover:after {
+	opacity: 1;
+}
+
+.instagram__item:hover .instagram__text {
+	opacity: 1;
+	visibility: visible;
+}
+
+.instagram__item:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	content: "";
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.instagram__text {
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
+.instagram__text i {
+	font-size: 30px;
+	color: #0d0d0d;
+}
+
+.instagram__text a {
+	font-size: 16px;
+	color: #0d0d0d;
+	font-weight: 500;
+	display: block;
+	margin-top: 10px;
+}
+
+/*---------------------
+  Footer
+-----------------------*/
+
+.footer {
+	padding-top: 55px;
+}
+
+.footer__about {
+	margin-bottom: 30px;
+}
+
+.footer__about p {
+	margin-bottom: 20px;
+}
+
+.footer__logo {
+	margin-bottom: 20px;
+}
+
+.footer__payment a {
+	margin-right: 6px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.footer__payment a:last-child {
+	margin-right: 0;
+}
+
+.footer__widget {
+	margin-bottom: 30px;
+}
+
+.footer__widget h6 {
+	color: #111111;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+.footer__widget ul li {
+	list-style: none;
+}
+
+.footer__widget ul li a {
+	font-size: 14px;
+	color: #666666;
+	line-height: 30px;
+}
+
+.footer__newslatter {
+	margin-bottom: 30px;
+}
+
+.footer__newslatter h6 {
+	color: #111111;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.footer__newslatter form {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.footer__newslatter form input {
+	height: 52px;
+	width: 100%;
+	border: 1px solid #e1e1e1;
+	border-radius: 50px;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #666666;
+}
+
+.footer__newslatter form input::-webkit-input-placeholder {
+	color: #666666;
+}
+
+.footer__newslatter form input::-moz-placeholder {
+	color: #666666;
+}
+
+.footer__newslatter form input:-ms-input-placeholder {
+	color: #666666;
+}
+
+.footer__newslatter form input::-ms-input-placeholder {
+	color: #666666;
+}
+
+.footer__newslatter form input::placeholder {
+	color: #666666;
+}
+
+.footer__newslatter form button {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+
+.footer__social a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: #e1e1e1;
+	font-size: 15px;
+	color: #111111;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 6px;
+	margin-bottom: 5px;
+}
+
+.footer__social a:last-child {
+	margin-right: 0;
+}
+
+.footer__copyright__text {
+	border-top: 1px solid #e1e1e1;
+	padding: 18px 0 25px;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.footer__copyright__text p {
+	margin-bottom: 0;
+}
+
+.footer__copyright__text a {
+	color: #5C5C5C;
+}
+
+.footer__copyright__text i {
+	color: #ca1515;
+}
+
+.footer__copyright__text a:hover {
+	color: #ca1515;
+}
+
+/*---------------------
+  Breadcrumb
+-----------------------*/
+
+
+/*---------------------
+  Product Details
+-----------------------*/
+
+
+
+
+/* search bar */

@@ -1,0 +1,85 @@
+<div class="container">
+
+<div class="row">
+<h2>Update Spare Parts</h2>
+<br>
+<br>
+<br>
+<br>
+
+<div class="col-md-2"></div>
+<div class="col-md-8">
+
+    {{#each spareData}}
+    <form class="form-horizontal" method="post" action="/updateSpare/{{this.item_code}}">
+
+        <div class="form-group">
+          
+        </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Item Name</label>
+            <div class="col-sm-10">
+
+                <input type="text"class="form-control" id="inputEmail3"  name="item_name" value="{{this.item_name}}">
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Price</label>
+            <div class="col-sm-10">
+
+                <input type="text"class="form-control" id="inputEmail3"  name="price" value="{{this.price}}">
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-4 control-labe1">Brand/Model number</label>
+            <div class="col-sm-10">
+
+                <input type="text"class="form-control" id="inputEmail3"  name="brand_model" value="{{this.brand_model}}">
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Quantity</label>
+            <div class="col-sm-10">
+
+                <input type="text"class="form-control" id="inputEmail3"style="width: 100px;" name="quantity" value="{{this.quantity}}">
+
+            </div>
+
+        </div>
+           <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Availability</label>
+            <div class="col-sm-10">
+
+                <input type="text"class="form-control" id="inputEmail3"style="width: 100px;" name="availability" value="{{this.availability}}">
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail3">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"style="padding"name="description" >{{this.description}}</textarea>
+        </div>
+    
+        <div class="group">
+            <div class="col-sm-offset-2 col-sm-10">
+
+                <button type="text" class="btn btn-success" id="addparts">UPDATE RECORD</button>
+
+            </div>
+
+        </div>
+       
+    </form>
+   {{/each}}
+</div>
+</div>
+</div>
+
